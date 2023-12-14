@@ -1,0 +1,43 @@
+config_version: 0.5.0
+label: Triana_et_all_test
+description: test
+preview:
+  type: none
+assays:
+  RNA:
+    assay: RNA
+    key: rna_
+    suffix_human: ''
+    dropdown_title: Gene
+  AB:
+    assay: AB
+    key: ab_
+    suffix_human: Surface Protein
+    dropdown_title: Surface Protein
+other_assay_options:
+  genes_assay: RNA
+  adt_assay: AB
+include_numeric_metadata: yes
+metadata:
+  seurat_clusters:
+    meta_colname: seurat_clusters
+    label: clusters
+    groups: ~
+  condensed_cell_type:
+    meta_colname: condensed_cell_type
+    label: celltype
+    groups: ~
+  Batch:
+    meta_colname: Batch
+    label: sample
+    groups: ~
+other_metadata_options:
+  patient_colname: ~
+reductions:
+  pca:
+    reduction: pca
+    label: pca
+  umap:
+    reduction: umap
+    label: umap
+adt_thresholds: ~
