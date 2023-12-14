@@ -11,4 +11,4 @@ scExploreR::run_scExploreR(
 )
 
 
-
+#rsconnect::writeManifest()
